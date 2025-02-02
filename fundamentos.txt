@@ -1,0 +1,314 @@
+JAVASCRPIT:
+	É uma linguagem de programação usada para criar páginas web interativas
+
+defer:
+	É um atributo que vai fazer com que os elementos html carreguem primeiro e js depois.
+	exemplo do uso: <script src="js.js" defer></script>
+
+CRUD (CREATE, READ, UPDATE, DELETE):
+	CREATE -> POST 
+	READ -> GET
+	UPDATE -> PUT
+	DELETE -> DELETE
+
+lista/array = []
+objetos = {}
+
+typeof:
+	Mostra o tipo de dado que esta sendo usado
+
+Javascript tem três formas de criar variaveis
+	var -> Escopo: Escopo de função ou global. Não respeita o escopo de bloco.
+	Hoisting: É elevado para o topo do escopo, podendo ser usado antes da declaração, mas com valor undefined.
+	Reatribuição: Pode ser redeclarado e reatribuído.
+
+	let -> Escopo: Escopo de bloco (dentro de {}). Respeita o escopo de bloco.
+	Hoisting: É elevado para o topo do bloco, mas não pode ser usado antes da linha de declaração.
+	Reatribuição: Pode ser reatribuído, mas não redeclarado no mesmo escopo.
+
+	const -> Escopo: Escopo de bloco (dentro de {}). Respeita o escopo de bloco.
+	Hoisting: É elevado para o topo do bloco, mas não pode ser usado antes da linha de declaração.
+	Reatribuição: Não pode ser reatribuído nem redeclarado.
+
+Tipos de dados
+	String -> São dados que utilizam textos.
+	Number -> São dados que utilizam só números.
+	Boolean -> São dados de verdadeiro (true) ou falso (false).
+
+METODOS:
+	Um método é uma função que está associada a um objeto. Em JavaScript, métodos são funções que podem 
+	ser chamadas em objetos ou tipos de dados, como strings e arrays.
+
+ARGUMENTO:
+	certo, o que é metodo e argumento
+Ótima pergunta! Vamos aos conceitos:
+
+Método
+Um método é uma função que está associada a um objeto. Em JavaScript, métodos são funções que podem ser chamadas em objetos ou tipos de dados, como strings e arrays. Por exemplo, o método push() em um array adiciona um ou mais elementos ao final do array.
+
+Argumento:
+	Um argumento é um valor que você passa para uma função ou método quando você o chama. 
+	Os argumentos fornecem as informações necessárias para que a função ou método execute suas operações.
+
+Escopo Global:
+	Acessível em qualquer parte do código.
+
+Escopo de Função:
+	Acessível apenas dentro da função onde foi declarada.
+
+Escopo de Bloco:
+	Acessível apenas dentro do bloco {} onde foi declarada (válido para let e const).
+
+pos-incremento:
+	Ele só atualizar quando for chamado novamente num = 1 (num++) 
+		Dessa forma ele ainda permaneceria 1, mas quano fosse chamado novamente o num seria 2
+
+pre-incremento:
+	Ele atualizar na hora, ele já soma logo após a adição num = 1 (++num) logo seria 3
+
+Operadores aritimeticos ou de atribuição:
+	+ -> Adição
+	- -> Subtração
+	* -> Multiplicação
+	/ -> Divisão
+	% -> Resto
+	** -> Exponencial
+
+Operadores de Comparação:
+	> -> Maior que
+	< -> Menor que
+	>= -> Maior que ou igual
+	<= -> menor que ou igual
+	== -> Igual
+	=== -> Idêntico
+	!= -> Diferente de
+
+Operadores Lógicos:
+	AND -> &&
+	OR -> || 
+	NOT -> !
+
+Condicionais:
+	A condicional vai verificar se a condição é verdaeira ou falsa.
+	A condicional if é uma estrutura condicional que executa a afirmação, dentro do bloco, se determinada condição 
+	for verdadeira. Se for falsa, executa as afirmações dentro de else.
+
+Lopps:
+	São estruturas de repetições;
+		for -> É uma estrutura de repetição que ao ser usado já se sabe quando irá parar
+			ou seja, um loops que tem um fim
+		while -> É uma estrutura de repetição que é mais usado quando não se saber quando o loop vai parar
+
+		do while -> É uma estrutura de repetição que é mais usado quando não se saber quando o loop vai parar
+
+Funções:
+	Uma função é um bloco de código reutilizável que executa uma tarefa específica. 
+	As funções ajudam a organizar o código, evitando repetições e tornando-o mais fácil de manter.
+
+Return:
+	É o retorno de dados de uma função
+
+Função anônima:
+	é uma função que não possui um nome definido. Ela é geralmente atribuída a uma variável 
+	ou passada como argumento para outra função.
+	ex: const saudacao = function (nome) {
+    		console.log("ola " + nome);
+		}
+
+	saudacao("Mariana");
+
+Função anônima 2 (callback ou cb):
+	é uma função passada como argumento para outra função.
+	O uso de callbacks é uma forma comum de lidar com operações assíncronas, 
+	como leitura de arquivos, requisições de rede ou timers.
+
+	function saudacao(nome, callback) {
+    		console.log("Ola " + nome);
+    		callback();
+	}
+
+	function despedida() {
+    		console.log("Ate logo");
+	}
+
+	saudacao("Mariana", despedida)
+
+Arrow Function ou Função de flecha:
+	é uma forma mais curta e moderna de escrever funções anônimas no JavaScript, introduzida no ES6.
+	OBS: Ela usa a seta (=>) em vez da palavra-chave function.
+	OBS2: Se houver apenas uma expressão, não precisa de {} nem de return.
+	OBS3: Se a função tem mais de uma linha, usamos {} e return:
+	
+Escopo:
+	Escopo define onde as variáveis e funções podem ser acessadas no código. 
+	Ele controla a visibilidade e a vida útil das variáveis.
+
+Escopo global:
+	Variáveis declaradas fora de funções ou blocos ficam acessíveis em todo o código.
+
+Escopo local:
+	Variáveis declaradas dentro de funções só existem dentro delas.
+
+Escopo de bloco:
+	Variáveis declaradas com let e const dentro de {} só existem dentro desse bloco.
+
+Hoisting:
+	Hoisting é um mecanismo do JavaScript que faz com que as declarações de variáveis 
+	e de funções sejam movidas para o topo de seu escopo antes da execução do código.
+	
+	Portanto, se fizermos isso:
+
+    	console.log (greeter);
+    	var greeter = "say hello"
+
+	A interpretação será:
+
+    	var greeter;
+    	console.log(greeter); // greeter is undefined
+    	greeter = "say hello"
+	
+
+Promises:
+	É um objeto que representa uma operação assíncrona que pode estar pendente, resolvida ou rejeitada. 
+	Elas são usadas para lidar com operações que levam tempo, como requisições a uma API, 
+	leitura de arquivos ou temporizadores.
+
+	Estados de uma Promise:
+		Pending (Pendente) – A operação ainda não foi concluída.
+
+		Fulfilled (Resolvida) – A operação foi concluída com sucesso.
+	
+		Rejected (Rejeitada) – Ocorreu um erro durante a execução.
+
+Operação Assincrona: 
+	Uma operação assíncrona é um processo que não bloqueia o restante do código enquanto está sendo executado. 
+	Ou seja, o código pode continuar a rodar enquanto espera a conclusão dessa operação.
+
+
+
+ASYNC/AWAIT:
+	async/await são palavras-chave no JavaScript que tornam o código assíncrono mais fácil de escrever e entender. 
+	Elas permitem que você trabalhe com Promises de maneira mais simples, como se fosse código síncrono, 
+	mas sem bloquear o resto da aplicação.
+
+	async -> Assincrona
+	await -> Esperar
+
+O que é async?
+	A palavra-chave async é usada antes de uma função para indicar que ela vai retornar 
+	uma Promise e que dentro dela você pode usar o await.
+	
+	async function minhaFuncao() {
+  		return "Olá, mundo!";
+	}
+
+O que é await?
+	A palavra-chave await só pode ser usada dentro de uma função async. Ela é usada para esperar 
+	o resultado de uma Promise. Quando você usa await, o JavaScript vai pausar a 
+	execução da função até que a Promise seja resolvida (ou rejeitada).
+
+Como funciona o async/await?
+	O async transforma a função em uma função assíncrona que retorna uma Promise.
+	O await é usado para esperar o resultado de uma Promise dentro de uma função async.
+
+O que é o this?
+	O this no JavaScript é uma referência ao objeto atual no qual a função está sendo executada. 
+	Ele se refere ao contexto de execução da função, ou seja, quem é o dono da função ou quem chamou a função.
+fecth():
+	é uma maneira moderna de fazer requisições HTTP assíncronas. Ela é usada para buscar recursos através da 
+	rede, como dados de APIs, e faz parte das APIs Fetch.
+
+GET: 
+	Usado para solicitar dados de um servidor. Basicamente, é como pegar informações.
+
+PUT:
+	Usado para atualizar dados em um servidor. Ele substitui os dados existentes com os novos dados fornecidos.
+
+POST:
+	Usado para enviar novos dados para um servidor. Diferente do PUT, que substitui os dados, o POST geralmente cria novos recursos.
+
+DELETE:
+	Usado para deletar dados em um servidor.
+
+
+METODOS ARRAY:	
+
+map():
+	É um método que percorrer um array e aplicar uma função para cada elemento, 
+	transformando esses elementos e criando um novo array.
+
+filter(): 
+	Permite selecionar elementos com base numa condição (função)
+
+reduce():
+	Transformar uma array em um único valor, aplicando uma função de redução a cada elemento da array.
+
+push():
+	Adiciona um ou mais elementos no final da array.
+
+pop():
+	Remove o ultimo elemento do array
+
+shift():
+	Remove o primeiro elemento so array.
+
+forEach():
+	percorre todos os elementos de um array e executa uma função específica para cada um desses elementos.
+
+MÉTODOS STRING:
+
+
+toLowerCase():
+	Deixa todas as letras em minusculo;
+
+toUpperCase():
+	Deixa a palavras em maiusculo;
+
+split():
+	Dividir string em um array de substrings com base em um separador especificado
+
+replace():
+	substitui uma string por outra
+
+includes():
+	Vai verificar se esse dado esta na lista/array
+
+startsWith():
+	Ele verificar se a string começa com um valor especifico, e retorna uma valor boolean.
+
+endsWith():
+	Ele verificar se a string termina com um valor especifico, e retorna um valor boolean.
+
+slice():
+	permite extrair uma parte específica de uma string e retorná-la essa string.
+
+charAt():
+	 retorna a caractere na posição especificada de uma string.
+
+repeat():
+	cria e retorna uma nova string com um número especificado de cópias da string original.	
+
+trim():
+	é uma função utilizada para remover os espaços em branco no início e no final de uma string
+
+sort():
+	Ele vai ordernar o array, vai deixar cada elemento no seu lugar em ordem crescente
+
+reverse():
+	 Ele faz com que o array comece do ultimo ate o primeiro
+
+join():
+	permite unir os elementos de um array em uma única string
+
+addeventlistenrer():
+	O addEventListener é um método essencial em JavaScript para interagir com os eventos que ocorrem na página. 
+	Ele permite que você escute eventos específicos, como cliques de mouse, teclas pressionadas, movimentos 
+	do cursor, entre muitos outros, e execute uma função quando esses eventos acontecem.
+
+	click: Quando um elemento é clicado.
+
+	mouseover: Quando o cursor do mouse passa sobre um elemento.
+
+	keydown: Quando uma tecla é pressionada.
+
+	submit: Quando um formulário é enviado.

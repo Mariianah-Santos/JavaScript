@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* SEÇÃO DOS INPUTS */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+
+}
+
+.box-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 10px;
+}
+.box-input label {
+    font-size: 13px;
+    font-weight: 500;
+}
+.box-input input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 40px;
+    text-indent: 5px;
+}
+
+::placeholder {
+    font-size: 12px;
+    text-indent: 5px;
+}
+
+/* BOTAO ADICIONAR */
+
+.btn-add button{
+    background-color: rgb(49, 199, 36);
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-add button:hover {
+    background-color: rgb(72, 231, 57);
+}
+
+/* TABELA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-header th {
+   text-align: left;
+   padding-left: 5px;
+   border: 1.5px solid rgb(62, 52, 63);
+   background-color: rgba(203, 152, 216, 0.486);
+}
+
+.body-table td{
+    border: 1px solid black;
+    padding-left: 5px;
+}
+button.del {
+    background-color: rgb(241, 27, 27);
+    color: white;
+    border: 0;
+    padding: 3px 6px 3px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}

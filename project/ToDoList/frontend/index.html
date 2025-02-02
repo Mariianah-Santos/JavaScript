@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!-- seção para adicionar dados da tarefa -->
+    <section class="container"> 
+        <h1>To Do List</h1>
+        <div class="box-group">
+            <div class="box-input">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Titulo da Tarefa">
+            </div>
+            <div class="box-input">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" placeholder="Escreva uma descrição para a Tarefa">
+            </div>
+        </div>
+        <div class="btn-add">
+            <button type="submit" id="submitButton">Adicionar</button>
+        </div>
+    </section>
+
+
+    <!-- Seção da tabela das tarefas -->
+    <section class="container-table">
+        <table class="table">
+            <thead class="table-header">
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody class="body-table" id="list">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
