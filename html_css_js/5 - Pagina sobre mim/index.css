@@ -1,0 +1,40 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+.imagem {
+    background-color: white;
+    border-radius: 50%;
+}
+.container img {
+    width: 20vh;
+    border-radius: 50%;
+}
+
+.text {
+    text-align: justify;
+    width: 50%;
+}
+
+.btn {
+    position: absolute;
+    top: 24rem;
+    background-color: transparent;
+    border-color: white;
+    padding: 5px;
+    color: white;
+}

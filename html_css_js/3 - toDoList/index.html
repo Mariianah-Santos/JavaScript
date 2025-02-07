@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <form class="container">
+        <h1> To Do List</h1>
+        <div class="input-box">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Escreva o titulo">
+        </div>
+        <div class="input-box">
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" placeholder="Digite uma descrição para a tarefa">
+        </div>
+        <button type="submit" id="submitButton">Adicionar</button>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tituto</th>
+                <th>Descrição</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+
+        <tbody id="list"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

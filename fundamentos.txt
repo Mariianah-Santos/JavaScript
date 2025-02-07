@@ -38,15 +38,11 @@ Tipos de dados
 METODOS:
 	Um método é uma função que está associada a um objeto. Em JavaScript, métodos são funções que podem 
 	ser chamadas em objetos ou tipos de dados, como strings e arrays.
+	Um método é uma função que está associada a um objeto. Em JavaScript, 
+	métodos são funções que podem ser chamadas em objetos ou tipos de dados, como strings e arrays. 
+	Por exemplo, o método push() em um array adiciona um ou mais elementos ao final do array.
 
 ARGUMENTO:
-	certo, o que é metodo e argumento
-Ótima pergunta! Vamos aos conceitos:
-
-Método
-Um método é uma função que está associada a um objeto. Em JavaScript, métodos são funções que podem ser chamadas em objetos ou tipos de dados, como strings e arrays. Por exemplo, o método push() em um array adiciona um ou mais elementos ao final do array.
-
-Argumento:
 	Um argumento é um valor que você passa para uma função ou método quando você o chama. 
 	Os argumentos fornecem as informações necessárias para que a função ou método execute suas operações.
 

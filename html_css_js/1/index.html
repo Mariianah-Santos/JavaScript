@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <!-- Validação de Formulário Crie uma função que valide um formulário de contato. 
+    Verifique se os campos "Nome", "Email" e "Mensagem" não estão vazios e se o email está em 
+    um formato válido. -->
+
+    <form class="container">
+        <div class="input-box">
+            <label for="name">nome</label>
+            <input type="text" id="name">
+        </div>
+        <div class="input-box">
+            <label for="email">email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="input-box">
+            <label for="msg">mensagem</label>
+            <textarea id="msg"></textarea>
+        </div>
+        <button type="submit" onclick="submitButton()">Enviar</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
