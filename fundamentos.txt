@@ -35,6 +35,10 @@ Tipos de dados
 	Number -> São dados que utilizam só números.
 	Boolean -> São dados de verdadeiro (true) ou falso (false).
 
+prompt:	
+	Usando para entrada de dados
+	EX: prompt("Digite algo ")
+
 METODOS:
 	Um método é uma função que está associada a um objeto. Em JavaScript, métodos são funções que podem 
 	ser chamadas em objetos ou tipos de dados, como strings e arrays.
@@ -207,6 +211,13 @@ Como funciona o async/await?
 	O async transforma a função em uma função assíncrona que retorna uma Promise.
 	O await é usado para esperar o resultado de uma Promise dentro de uma função async.
 
+try e catch:
+	try: você coloca o código que pode gerar um erro.
+	catch:  você trata o erro caso ele aconteça.
+
+isNaN:
+	Vai verificar se o campo digitado não é um numero
+
 O que é o this?
 	O this no JavaScript é uma referência ao objeto atual no qual a função está sendo executada. 
 	Ele se refere ao contexto de execução da função, ou seja, quem é o dono da função ou quem chamou a função.
@@ -308,3 +319,15 @@ addeventlistenrer():
 	keydown: Quando uma tecla é pressionada.
 
 	submit: Quando um formulário é enviado.
+
+DOMContentLoaded:
+	É um evento o JS que faz com que JS só execute suas funções quando o HTML esteja todo carregador
+	Parecido com o defer
+
+blur:
+	É um evento de perca foco em um campo ou elemento
+ 	Exemplo: Validar um campo depois que o usuário digitou algo e saiu dele.
+
+focus: 
+	É um evento de entrada de foco em um campo ou elemento 
+	Exemplo: Mostrar uma mensagem quando o usuário começa a digitar.

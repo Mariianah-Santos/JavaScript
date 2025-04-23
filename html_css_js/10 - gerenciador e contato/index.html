@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <section class="container">
+        <form>
+            <h1>Gerenciador de Contato</h1>
+            <div class="box-input">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite o nome do contato" >
+                <div id='msgErrorName' class="obrigatorio"></div>
+            </div>
+            <div class="box-input">
+                <label for="tel">Telefone</label>
+                <input type="text" id="tel" placeholder="xxxxxxxxx" maxlength="11">
+                <div id='msgErrorTel' class="obrigatorio"></div>
+            </div>
+            <div class="btn">
+                <button type="submit" id="submitButton">Adicionar</button>
+            </div>
+        </form>
+    </section>
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody id="listContact"></tbody>
+        </table>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

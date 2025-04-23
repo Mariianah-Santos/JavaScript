@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(155, 224, 178);
+}
+
+.box-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+
+}
+
+.box-card .cardUnico {
+    background-color: rgb(176, 224, 228);
+    border-radius: 5px;
+    height: auto;
+}
+.box-card .cardUnico img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.box-card .cardUnico p {
+    text-align: center;
+}
+
+/* BOTAO ADD */
+
+.btn-add {
+    position: absolute;
+    right: 10%;
+    top: 18%;
+}
+
+.btn-add button {
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(79, 158, 79);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
